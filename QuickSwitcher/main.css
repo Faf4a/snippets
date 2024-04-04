@@ -39,7 +39,7 @@
 }
 .quickswitcher_b5bb0a .emptyState_bdb86c {
 	background: none;
-    padding-top: 50px;
+    	padding-top: 50px;
 }
 .quickswitcher_b5bb0a:not(:has(.result__25f11)) .contentDefault_d3a863 .header__794a7 {
 	visibility: hidden;
