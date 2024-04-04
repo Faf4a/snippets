@@ -1,5 +1,5 @@
 .layer_c14d31:has(.quickswitcher_b5bb0a) {
-    top: 5rem;
+    	top: 5rem;
 	justify-content: start;
 }
 .quickswitcher_b5bb0a {
@@ -32,7 +32,7 @@
 }
 .quickswitcher_b5bb0a .emptyStateNote__330db,
 .emptyStateCTA__31be4 .anchor_c8ddc0 {
-    color: var(--text-normal);
+    	color: var(--text-normal);
 }
 .quickswitcher_b5bb0a .content_fdd09a {
 	justify-content: space-evenly;
