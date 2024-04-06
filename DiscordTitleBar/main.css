@@ -1,0 +1,87 @@
+#app-mount,
+.typeWindows_e41dab,
+.app_de4237,
+.bg__12180:has(.base_c0676e),
+.guilds__2b93a,
+.scroller_de945b {
+    background: linear-gradient(var(--os-accent-color), var(--os-accent-color)), rgb(240, 240, 240) !important;
+}
+
+.bg__12180,
+app_de4237,
+.base_c0676e {
+    border-top-left-radius: 1rem;
+    background: none;
+}
+
+.expandedFolderBackground_b1385f {
+    background: linear-gradient(var(--os-accent-color), var(--os-accent-color)), rgba(90, 90, 90, 0.514) !important;
+}
+
+.expandedFolderIconWrapper__324c1 svg path {
+    fill: var(--os-accent-color) !important;
+}
+
+.wrapper__9916c:has(.lowerBadge_e89e22) .expandedFolderIconWrapper__324c1 {
+    position: relative;
+    right: 5px;
+    bottom: 5px;
+}
+
+.titleBar__710b0 {
+    height: 24px;
+}
+
+.titleBar__710b0.withFrame__5e49e {
+    margin-top: 0;
+}
+
+.titleBar__710b0.typeMacOS_cacc59 {
+    top: var(--app-margin);
+    left: var(--app-margin);
+}
+
+.titleBar__710b0.typeMacOS_cacc59 .macButtons__40068 {
+    width: 72px;
+    border-top-left-radius: var(--app-radius);
+}
+
+.titleBar__710b0.typeMacOS_cacc59 .macButtons__40068 .macButton__0de05 {
+    cursor: pointer;
+}
+
+.wordmarkWindows_ffbc5e {
+    color: #fff;
+}
+
+.winButton_f17fb6 {
+    height: 100%;
+    top: 0;
+    color: #fff;
+}
+
+.platform-osx .wrapper__216eb {
+    margin-top: 0;
+    padding-top: 35px;
+}
+
+.platform-osx .tree__7a511 {
+    margin-top: 32px;
+}
+
+.folder__17546[aria-expanded=true],
+.guildSeparator__75928,
+.circleIconButton__05cf2,
+.ring__349e5 {
+    transition: background 0.3s ease-in-out;
+    border-radius: 0px;
+    background: linear-gradient(var(--os-accent-color), var(--os-accent-color)), rgb(10, 10, 10) !important;
+}
+
+.folder__17546 {
+    transition: background 0.3s ease-in-out;
+}
+
+.ring__349e5 svg path {
+    fill: var(--primary-200);
+}
