@@ -1,3 +1,7 @@
+:root {
+    --bg-drop-themed: rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-5));
+}
+
 .wrapper__216eb[aria-label="Servers sidebar"] {
     position: relative;
     transition: all 0.3s ease-in-out;
@@ -49,6 +53,7 @@
     content: attr(data-dnd-name);
     position: absolute;
     top: 5px;
+    z-index: 8 !important;
     padding: 12px 5px 5px 5px;
     border-radius: 8px;
     width: fit-content;
@@ -81,4 +86,83 @@
     position: relative;
     right: 5px;
     bottom: 5px;
+}
+
+.theme-dark.custom-theme-background .wrapper__216eb[aria-label="Servers sidebar"]:hover div[aria-label="Servers"]>.listItem__48528 .childWrapper_a6ce15 {
+    background-color: var(--background-secondary-alt) !important;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.wrapper__216eb[aria-label="Servers sidebar"] div[aria-label="Servers"]>.listItem__48528::after,
+.wrapper__216eb[aria-label="Servers sidebar"] div[aria-label="Servers"]>.listItem__48528::before {
+    transition: width 0.2s ease-in-out; 
+}
+
+.wrapper__216eb[aria-label="Servers sidebar"]:hover div[aria-label="Servers"]>.listItem__48528::before {
+    content: "";
+    position: absolute;
+    background: var(--bg-drop-themed, var(--background-secondary));
+    width: 9.8rem;
+    height: 2.963rem;
+    border-radius: 5px 0 0 5px;
+    left: 1.9rem;
+    transition: width 0.2s ease-in-out;
+}
+
+.wrapper__216eb[aria-label="Servers sidebar"]:hover div[aria-label="Servers"]>.listItem__48528::after {
+    content: "";
+    position: absolute;
+    background: var(--bg-drop-themed, var(--background-secondary));
+    width: 3.125rem;
+    height: 2.975rem;
+    border-radius: 0 50% 50% 0;
+    left: 11.7rem;
+    overflow: hidden;
+    transition: width 0.2s ease-in-out;
+}
+
+.theme-light.custom-theme-background .wrapper__216eb[aria-label="Servers sidebar"]:hover div[aria-label="Servers"]>.listItem__48528::before {
+    content: "";
+    position: absolute;
+    background: var(--bg-drop-themed, var(--background-secondary));
+    width: 9.8rem;
+    height: 2.963rem;
+    border-radius: 5px 0 0 5px;
+    left: 1.9rem;
+    transition: width 0.2s ease-in-out;
+}
+
+.theme-light.custom-theme-background .wrapper__216eb[aria-label="Servers sidebar"]:hover div[aria-label="Servers"]>.listItem__48528::after {
+    content: "";
+    position: absolute;
+    background: var(--bg-drop-themed, var(--background-secondary));
+    width: 3.125rem;
+    height: 2.975rem;
+    border-radius: 0 50% 50% 0;
+    left: 11.7rem;
+    overflow: hidden;
+    transition: width 0.2s ease-in-out;
+}
+
+.theme-dark.custom-theme-background .wrapper__216eb[aria-label="Servers sidebar"]:hover div[aria-label="Servers"]>.listItem__48528::before {
+    content: "";
+    position: absolute;
+    background: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6));
+    width: 9.8rem;
+    height: 2.963rem;
+    border-radius: 5px 0 0 5px;
+    left: 1.9rem;
+    transition: width 0.2s ease-in-out;
+}
+
+.theme-dark.custom-theme-background .wrapper__216eb[aria-label="Servers sidebar"]:hover div[aria-label="Servers"]>.listItem__48528::after {
+    content: "";
+    position: absolute;
+    background: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6));
+    width: 3.125rem;
+    height: 2.975rem;
+    border-radius: 0 50% 50% 0;
+    left: 11.7rem;
+    overflow: hidden;
+    transition: width 0.2s ease-in-out;
 }
