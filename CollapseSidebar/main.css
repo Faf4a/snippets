@@ -3,7 +3,6 @@
 }
 
 .wrapper__216eb[aria-label="Servers sidebar"] {
-    position: relative;
     transition: all 0.3s ease-in-out;
 }
 
@@ -14,7 +13,7 @@
 
 .wrapper__216eb[aria-label="Servers sidebar"]:hover .expandedFolderBackground_b1385f~.listItem__48528:nth-child(2)>div::before {
     content: attr(data-dnd-name);
-    top: 1.125rem;
+    top: 1rem;
     left: 4.5rem;
     position: absolute;
     padding: 0px 5px 5px 5px;
@@ -52,7 +51,7 @@
 .wrapper__216eb[aria-label="Servers sidebar"]:hover :has(.expandedFolderBackground_b1385f) .blobContainer_c44493::after {
     content: attr(data-dnd-name);
     position: absolute;
-    top: 5px;
+    top: 4.5px;
     z-index: 8 !important;
     padding: 12px 5px 5px 5px;
     border-radius: 8px;
@@ -95,7 +94,7 @@
 
 .wrapper__216eb[aria-label="Servers sidebar"] div[aria-label="Servers"]>.listItem__48528::after,
 .wrapper__216eb[aria-label="Servers sidebar"] div[aria-label="Servers"]>.listItem__48528::before {
-    transition: width 0.2s ease-in-out; 
+    transition: width 0.2s ease-in-out;
 }
 
 .wrapper__216eb[aria-label="Servers sidebar"]:hover div[aria-label="Servers"]>.listItem__48528::before {
@@ -164,5 +163,58 @@
     border-radius: 0 50% 50% 0;
     left: 11.7rem;
     overflow: hidden;
+    transition: width 0.2s ease-in-out;
+}
+
+.wrapper__216eb[aria-label="Servers sidebar"]:hover .listItem__48528:has(.guildSeparator__75928),
+.wrapper__216eb[aria-label="Servers sidebar"]:hover .guildSeparator__75928 {
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 1.2rem;
+    margin-right: 2.6rem;
+}
+
+.wrapper__216eb[aria-label="Servers sidebar"] .tutorialContainer_b06ae6, .wrapper__216eb[aria-label="Servers sidebar"] .tutorialContainer_b06ae6 .listItem__48528 {
+    transition: all 0.3s ease-in-out;
+}
+
+.wrapper__216eb[aria-label="Servers sidebar"]:hover .tutorialContainer_b06ae6::before {
+    content: ""; 
+    position: absolute;
+    background: var(--bg-drop-themed, var(--background-secondary));
+    width: 9.8rem;
+    height: 2.963rem;
+    border-radius: 5px 0 0 5px;
+    left: 2.5rem;
+    top: 0;
+    transition: width 0.2s ease-in-out;
+}
+
+.wrapper__216eb[aria-label="Servers sidebar"]:hover .tutorialContainer_b06ae6::after {
+    content: "";
+    position: absolute;
+    background: var(--bg-drop-themed, var(--background-secondary));
+    width: 3.125rem;
+    height: 2.975rem;
+    border-radius: 0 50% 50% 0;
+    left: 11.7rem;
+    top: 0;
+    overflow: hidden;
+    transition: width 0.2s ease-in-out;
+}
+
+.wrapper__216eb[aria-label="Servers sidebar"]:hover .tutorialContainer_b06ae6 .listItem__48528::before {
+    content: "Direct Messages";
+    top: 1rem;
+    left: 4.5rem;
+    position: absolute;
+    z-index: 8 !important;
+    padding: 0px 5px 5px 5px;
+    width: fit-content;
+    max-width: 8rem;
+    color: var(--text-normal);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     transition: width 0.2s ease-in-out;
 }
