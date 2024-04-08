@@ -146,7 +146,3 @@
 .connectedAccountContainer__5972d:hover:has([aria-label="Facebook"]) {
     color: var(--facebook-color) !important;
 }
-
-.jumpToPresentBar__69174 {
-    background: var(--bg-overlay-4, var(--background-accent));
-}
