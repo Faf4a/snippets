@@ -15,11 +15,11 @@ app_de4237,
 }
 
 .expandedFolderBackground_b1385f {
-    background: linear-gradient(var(--os-accent-color), var(--os-accent-color)), rgba(90, 90, 90, 0.514) !important;
+    background: linear-gradient(var(--os-accent-color), var(--os-accent-color)), rgba(240, 240, 240, 0.7) !important;
 }
 
 .expandedFolderIconWrapper__324c1 svg path {
-    fill: var(--os-accent-color) !important;
+    fill: rgba(240, 240, 240, 0.15);
 }
 
 .wrapper__9916c:has(.lowerBadge_e89e22) .expandedFolderIconWrapper__324c1 {
@@ -50,14 +50,10 @@ app_de4237,
     cursor: pointer;
 }
 
-.wordmarkWindows_ffbc5e {
-    color: #fff;
-}
-
 .winButton_f17fb6 {
     height: 100%;
     top: 0;
-    color: #fff;
+    color: rgba(240, 240, 240, 0.75);
 }
 
 .platform-osx .wrapper__216eb {
@@ -75,13 +71,13 @@ app_de4237,
 .ring__349e5 {
     transition: background 0.3s ease-in-out;
     border-radius: 0px;
-    background: linear-gradient(var(--os-accent-color), var(--os-accent-color)), rgb(10, 10, 10) !important;
+    background: linear-gradient(var(--os-accent-color), var(--os-accent-color)), rgb(255, 255, 255, 0.2) !important;
 }
 
 .folder__17546 {
     transition: background 0.3s ease-in-out;
 }
 
-.ring__349e5 svg path {
-    fill: var(--primary-200);
+.childWrapperNoHoverBg__7e8f1 {
+    background-color: linear-gradient(var(--os-accent-color), var(--os-accent-color)), rgb(255, 255, 255 0.2) !important;
 }
