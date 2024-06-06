@@ -1,9 +1,18 @@
-.layer_c14d31:has(.quickswitcher_b5bb0a) {
+/**
+* @name Better Quick Switcher
+* @author catpurrchino
+* @description Redesigned Quick Switcher for a more clean look
+* @version 1.5.1
+* @note You may redistribute this snippet as you like without attribution to the author
+* @source https://github.com/faf4a/snippets
+*/
+
+[class*=layer_]:has([class*=quickswitcher_]) {
     top: 5rem;
     justify-content: start;
 }
 
-.quickswitcher_b5bb0a {
+[class*=quickswitcher_] {
     padding: 12px;
     border: 1px solid var(--bg-overlay-3, var(--background-modifier-accent-2));
     background: var(--bg-overlay-3, var(--background-secondary-alt));
@@ -11,7 +20,7 @@
     box-sizing: initial;
 }
 
-.quickswitcher_b5bb0a .scroller_d4b86c {
+[class*=quickswitcher_] [class*=scroller_] {
     margin: 0;
     border-radius: 0 0 4px 4px;
     scrollbar-width: none;
@@ -19,7 +28,7 @@
     padding: 7px !important;
 }
 
-.quickswitcher_b5bb0a input {
+[class*=quickswitcher_] input {
     height: 50px;
     text-align: center;
     background-color: var(--background-secondary);
@@ -28,50 +37,50 @@
     transition: all 0.2s ease-in-out;
 }
 
-.quickswitcher_b5bb0a .input__2a648:focus::placeholder {
+[class*=quickswitcher_] [class*=input_]:focus::placeholder {
     visibility: hidden;
 }
 
-.quickswitcher_b5bb0a:has(.emptyState_bdb86c) input {
+[class*=quickswitcher_]:has([class*=emptyState_]) input {
     border-radius: 4px;
 }
 
-.quickswitcher_b5bb0a .emptyStateNote__330db,
-.emptyStateCTA__31be4 .anchor_c8ddc0 {
+[class*=quickswitcher_] [class*=emptyStateNote_],
+[class*=emptyStateCTA_] [class*=anchor_] {
     color: var(--text-normal);
 }
 
-.quickswitcher_b5bb0a .content_fdd09a {
+[class*=quickswitcher_] [class*=content_] {
     justify-content: space-evenly;
 }
 
-.quickswitcher_b5bb0a .emptyState_bdb86c {
+[class*=quickswitcher_] [class*=emptyState_] {
     background: none;
     padding-top: 50px;
 }
 
-.quickswitcher_b5bb0a:not(:has(.result__25f11)) .contentDefault_d3a863 .header__794a7 {
+[class*=quickswitcher_]:not(:has([class*=result_])) [class*=contentDefault_] [class*=header_] {
     visibility: hidden;
 }
 
-.quickswitcher_b5bb0a:not(:has(.result__25f11)) .contentDefault_d3a863 .header__794a7::after {
-    content: "No results found for given query.";
+[class*=quickswitcher_]:not(:has([class*=result_])) [class*=contentDefault_] [class*=header_]::after {
+    content: "No results found for given query";
     visibility: visible;
     position: absolute;
     top: 7px;
     right: 10rem;
 }
 
-.quickswitcher_b5bb0a .protip__84833 {
+[class*=quickswitcher_] [class*=protip_] {
     display: none;
 }
 
-.quickswitcher_b5bb0a input:focus {
+[class*=quickswitcher_] input:focus {
     border: 1px solid var(--text-brand);
     transition: border 0.3s ease-in-out;
 }
 
-.backdrop__1a911:has(+ .layer_c14d31 .quickswitcher_b5bb0a) {
+[class*=backdrop_]:has(+ [class*=layer_] [class*=quickswitcher_]) {
     transition: all 0.2s ease-in-out;
     opacity: 0.5;
 }
