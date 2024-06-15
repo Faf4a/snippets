@@ -1,32 +1,41 @@
-.uploadDropModal_cfadae.error_d2567f .title__76592,
-.uploadDropModal_cfadae.error_d2567f .instructions_e266ce {
+/**
+* @name Degenerate File Upload
+* @author catpurrchino
+* @description Redesigned File Upload Error Modal
+* @version 1.0.0
+* @note You may redistribute this snippet as you like without attribution to the author
+* @source https://github.com/faf4a/snippets
+*/
+
+[class*=uploadDropModal_][class*=error_] [class*=title_],
+[class*=uploadDropModal_][class*=error_] [class*=instructions_] {
     visibility: hidden;
 }
 
-.uploadDropModal_cfadae.error_d2567f .title__76592::before {
+[class*=uploadDropModal_][class*=error_] [class*=title_]::before {
     content: "That was";
     position: relative;
     right: 20px;
     visibility: visible;
 }
 
-.uploadDropModal_cfadae.error_d2567f .title__76592::after {
+[class*=uploadDropModal_][class*=error_] [class*=title_]::after {
     content: "fucking stupid";
     position: relative;
     top: -22px;
-    right: -23px;
+    right: -25px;
     visibility: visible;
     font-style: italic;
 }
 
-.uploadDropModal_cfadae.error_d2567f .instructions_e266ce::before {
+[class*=uploadDropModal_][class*=error_] [class*=instructions_]::before {
     content: "Don't ever post that bullshit again";
     position: relative;
     left: 2.8rem;
     visibility: visible;
 }
 
-.uploadDropModal_cfadae.error_d2567f .instructions_e266ce::after {
+[class*=uploadDropModal_][class*=error_] [class*=instructions_]::after {
     content: "You fucking degenerate";
     position: relative;
     right: 4.8rem;
