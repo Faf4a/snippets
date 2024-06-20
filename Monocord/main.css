@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
+:root {
+    /* Colors */
+    --primary-bg-color: #181A1B;
+    --secondary-bg-color: #1D1F20;
+
+    /* Borders */
+    --border-primary: 3px solid var(--background-modifier-accent);
+    --border-radius: 0;
+
+    /* Fonts */
+    --monocord-font-primary: "Roboto Mono", monospace;
+    --monocord-font-code: "JetBrains Mono", "gg mono", monospace;
+    --font-primary: var(--monocord-font-primary);
+    --font-display: var(--monocord-font-primary);
+    --font-clan-body: var(--monocord-font-primary);
+    --font-clan-signature: var(--monocord-font-primary);
+    --font-headline: var(--monocord-font-primary);
+    --font-code: var(--monocord-font-code)
+}
+
+/* Primary Color Change */
+
+main,
+.container_a6d69a {
+    background-color: var(--primary-bg-color) !important;
+
+    & [class*=scroller_]::-webkit-scrollbar-track {
+        background-color: var(--bg-overlay-chat, var(--background-secondary));
+        border-color: var(--scrollbar-thin-track);
+    }
+
+    & [class*=scroller_]::-webkit-scrollbar-thumb {
+        background-color: var(--secondary-bg-color);
+    }
+}
+
+.container_cbd271,
+.members_cbd271,
+.container_b2ca13 {
+    background-color: var(--secondary-bg-color) !important;
+}
+
+.container_b2ca13 {
+    background-color: var(--secondary-bg-color) !important;
+    border: var(--border-primary);
+    border-top: 0;
+    border-bottom: 0;
+}
+
+/* Members tab */
+
+.members_cbd271 {
+    & [class*=member_] {
+        margin-top: 5px;
+        background: var(--bg-overlay-chat, var(--background-secondary));
+    }
+
+    & [class*=membersGroup_] {
+        height: fit-content;
+    }
+
+    & .content_eed6a8 {
+        height: 845px !important;
+    }
+}
+
+/* NEW Label (unread msgs) */
+
+[class*=unreadPill_]:not(:has([class*=summaryEndIcon_])) {
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: var(--border-radius) !important;
+
+    & .unreadPillCap_fc5f50 {
+        display: none;
+    }
+}
+
+/* Replied Messages */
+
+[class*=repliedMessage_] {
+    &::before {
+        content: "┌──";
+        color: var(--interactive-muted);
+        border: 0;
+        top: 0;
+    }
+}
+
+/* Boosting Bar */
+
+[class*=progressBarContainer_] {
+    border: var(--border-primary);
+    background: var(--secondary-bg-color) !important;
+    height: 10px;
+
+    & [class*=bar_] {
+        border-radius: var(--border-radius) !important;
+        height: 10px;
+    }
+
+    & [class*=tadaIcon_] {
+        display: none;
+    }
+}
+
+/* Spotify Player */
+
+#vc-spotify-player {
+    background-color: var(--secondary-bg-color) !important;
+    border: var(--border-primary);
+    border-bottom: 0px;
+
+    & .bar_c7a159 {
+        border-radius: var(--border-radius) !important;
+        height: 10px !important;
+        top: 13.5px !important;
+    }
+}
+
+/* Polls */
+
+.pollContainer_b558d0 {
+    border-radius: var(--border-radius) !important;
+    border: var(--border-primary);
+}
+
+.answer_cf2c85 {
+    border-radius: 3.5px !important;
+
+    & .answerInner_cf2c85 {
+        border-radius: 3.5px !important;
+        border: var(--border-primary);
+
+        & .answerSelectionIcon_cf2c85 {
+            border-radius: var(--border-radius) !important;
+        }
+    }
+}
+
+/* Chatbar blur */
+
+.form_a7d72e::before {
+    display: none;
+}
+
+.children_d8bfb3 div:first-child {
+    display: none !important;
+}
+
+/* Discord Buttons (need to ignore vc setting buttons) */
+
+
+button[class*=button_]:not(svg, .vc-plugins-info-button, [class*=lookLink_], [class*=lookBlank_]):not(:has([class*=icon_])),
+button[class*=iconButton_]:not(svg, .vc-plugins-info-button, [class*=lookLink_], [class*=lookBlank_]):not(:has([class*=icon_])) {
+    border-radius: var(--border-radius) !important;
+    border: var(--border-primary) !important;
+    padding: 15px !important;
+}
+
+[class*=closeButton_] {
+    border-radius: var(--border-radius) !important;
+}
+
+/* Fix weird discord styling making them not centered */
+
+[class*=select_] {
+    padding: 10px 13.5px;
+}
+
+/* Voice Messages */
+
+[class*=container_] {
+    border-radius: 4px !important;
+
+    & [class*=rippleContainer] {
+        border-radius: 4px !important;
+        border: var(--border-primary);
+    }
+}
+
+/* File Previews*/
+
+[class*=newMosaicStyle_] [class*=textContainer_] {
+    border-radius: 4px 4px 0 0;
+}
+
+[class*=newMosaicStyle_] [class*=footer_] {
+    border-radius: 0 0 4px 4px !important;
+}
