@@ -159,6 +159,10 @@ main,
     display: none !important;
 }
 
+.children_d8bfb3:has([class*=mentionsBadge_]) div:first-child {
+    display: block !important;
+}
+
 /* Discord Buttons (need to ignore vc setting buttons) */
 
 
