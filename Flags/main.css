@@ -48,10 +48,13 @@
 [class^=channelNameSpan_],
 /* inbox */
 [class^=quickswitcher_] [class^=name_]
-
 /* ctrl+k */
-    {
+{
     font-family: "Twemoji Mozilla", "dashless", var(--font-primary);
+}
+
+.username_ec86aa {
+    font-family: "Twemoji Mozilla", var(--font-primary);
 }
 
 [class^=emptyChannelIcon_]~[class*=description_]>* {
