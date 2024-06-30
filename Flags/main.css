@@ -5,5 +5,13 @@
 }
 
 * {
-    font-family: "Twemoji Mozilla", var(--font-primary);
+    font-family: "Twemoji Mozilla", var(--font-primary) !important;
+
+    && code {
+        font-family: var(--font-code) !important;
+    }
+
+    && [class^=codeContainer_] * {
+        font-family: var(--font-code) !important;
+    }
 }
