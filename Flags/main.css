@@ -14,4 +14,8 @@
     && [class^=codeContainer_] * {
         font-family: var(--font-code) !important;
     }
+
+    && [class*=before_inlineCode_] *, [class*=inlineCode_] *, [class*=codeLine_] * {
+        font-family: var(--font-code) !important;
+    }
 }
