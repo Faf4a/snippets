@@ -1,21 +1,9 @@
 @font-face {
-    font-family: "Twemoji Mozilla";
+    font-family: 'Twemoji Mozilla';
     src: url("https://vendicated.github.io/random-files/Twemoji.Mozilla.ttf") format("truetype");
     unicode-range: U+1F1E6-1F1FF;
 }
 
-* {
-    font-family: "Twemoji Mozilla", var(--font-primary) !important;
-
-    && code {
-        font-family: var(--font-code) !important;
-    }
-
-    && [class^=codeContainer_] * {
-        font-family: var(--font-code) !important;
-    }
-
-    && [class*=before_inlineCode_] *, [class*=inlineCode_] *, [class*=codeLine_] * {
-        font-family: var(--font-code) !important;
-    }
+:root {
+    --font-primary: 'Twemoji Mozilla', 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Symbols';
 }
