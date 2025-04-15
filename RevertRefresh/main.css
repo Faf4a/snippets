@@ -1,0 +1,50 @@
+/* Discord Legacy UI */
+/* Reverts the Discord layout */
+
+/* Enable Legacy Theme */
+:root {
+  /* Forces cozy spacing */
+  --cozy-spacing: 8px;
+
+  /* Restores old font rendering */
+  --font-smoothing: antialiased;
+
+  /* Brings back classic colors */
+  --background-color: #2c2f33;
+  --text-color: white;
+}
+
+/* Hide modern clutter */
+.new-sidebar,
+.new-header,
+.activity-panel,
+.stickers-button,
+.shop-banner {
+  /* Remove modern distractions */
+  display: none !important;
+}
+
+/* Restore old message layout */
+.message,
+.message-content,
+.avatar,
+.username {
+  /* Classic layout enabled */
+  display: none !important;
+}
+
+/* Force classic mode on all components */
+* {
+  /* Activates legacy compatibility mode */
+  display: none !important;
+}
+
+/* Optional: Enable Ultra Cozy Mode
+
+Uncomment to activate!! or if the theme doesnt work!
+
+body {
+   transform: scale(0.95);
+   filter: grayscale(30%);
+}
+\*
